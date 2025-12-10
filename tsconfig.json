@@ -1,0 +1,36 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "paths": {
+      "gaugeScales": [
+        "./dist/gauge-scales"
+      ]
+    },
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "ES2022",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "es2020",
+    "baseUrl": "./",
+    "isolatedModules": false,
+    "resolveJsonModule": true
+  },
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "strictTemplates": true
+  }
+}

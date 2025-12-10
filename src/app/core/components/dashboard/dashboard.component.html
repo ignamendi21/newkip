@@ -1,0 +1,57 @@
+@let dashboardStatic = dashboard.isDashboardStatic();
+<gridstack kipGestures [mode]="dashboardStatic ? 'dashboard' : 'editor'" [enablePress]="dashboardStatic ? false : true" [enableDoubleTap]="false" #grid
+  [options]="gridOptions()"
+  (swipeup)="previousDashboard()"
+  (swipedown)="nextDashboard()"
+  (press)="addNewWidget($event)"
+  (window:resize)="resizeGridColumns()"
+>
+  <!-- Empty state content - shown when grid has no widgets -->
+  <div empty-content class="dashboard-empty-state-container">
+    <div class="dashboard-empty-state-action">
+      <mat-icon class="empty-state-icon">dashboard</mat-icon>
+      @if (!dashboardStatic) {
+        <p class="empty-state-text"><strong>Long press/click and hold anywhere</strong> to add widgets</p>
+        <mat-icon class="touch-icon">touch_app</mat-icon>
+      } @else {
+        <p class="empty-state-text">This empty dashboard is ready to be customized.</p>
+        <button class="empty-state-button" mat-flat-button (click)="editDashboard()">
+          <mat-icon>lock_open</mat-icon>
+          Unlock and Customize
+        </button>
+      }
+    </div>
+    <div>
+      <div class="empty-state-help">
+          <button class="empty-state-help-button" mat-button (click)="navigateToHelp()">
+            <mat-icon>help</mat-icon>
+            Get Help
+          </button>
+        </div>
+    </div>
+  </div>
+</gridstack>
+@if (!dashboardStatic) {
+  <div class="edit-layout-close-icon">
+    <button
+      mat-fab
+      class="cancel"
+      style="margin-right: 10px"
+      (click)="cancelLayoutChanges()"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+    <button
+      mat-fab
+      class="save"
+      (click)="saveLayoutChanges()"
+    >
+      <mat-icon>done</mat-icon>
+    </button>
+  </div>
+} @else {
+  <dashboard-scroller
+    [activePage]="dashboard.activeDashboard()"
+    [dashboards]="dashboard.dashboards()"
+  />
+}

@@ -1,0 +1,8 @@
+<linear-gauge
+  class="linearGauge"
+  #linearGauge
+  (onResize)="onResized($event)"
+  [options]="gaugeOptions"
+  [value]="value()"
+  [attr.value-text]="textValue()"
+></linear-gauge>

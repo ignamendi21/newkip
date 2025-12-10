@@ -1,0 +1,40 @@
+:host {
+  display: block;
+}
+
+.layout-action-btn {
+  color: var(--mat-sys-on-primary);
+  background-color: var(--mat-sys-primary);
+}
+
+.icon-alert-color {
+  --mat-list-list-item-leading-icon-color: var(--kip-zone-alert-color);
+}
+
+.icon-warn-color {
+  --mat-list-list-item-leading-icon-color: var(--kip-zone-warn-color);
+}
+
+.icon-alarm-color {
+  --mat-list-list-item-leading-icon-color: var(--kip-zone-alarm-color);
+}
+
+.icon-emergency-color {
+  --mat-list-list-item-leading-icon-color: var(--kip-zone-emergency-color);
+}
+
+ // Blink button on Alarm or Emergency state
+ .alarm-emergency-blink {
+  animation: blinking-emergency 1.5s infinite;
+}
+
+@keyframes blinking-emergency {
+  0%{		background-color: var(--kip-zone-alarm-color);	}
+  50%{	background-color: var(--mat-sys-primary);	}
+  100%{	background-color: var(--kip-zone-alarm-color);	}
+}
+
+// Change icon color based on warn state
+.warn {
+  color: var(--kip-zone-warn-color);
+}

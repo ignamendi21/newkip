@@ -1,0 +1,429 @@
+// Import local Angular Google font and icon styles
+@use './styles-common/material-icons.scss';
+@use './styles-common/roboto.scss';
+
+@use './themes/_m3dark.scss' as dark;
+@use './themes/_m3light.scss' as light;
+@use './themes/_m3night.scss' as night;
+
+@use './styles-common/settingsTabContent.scss' as settingsTabContent;
+
+// Import GridStack styles
+@use "gridstack/dist/gridstack.min.css";
+
+@use '@angular/material' as mat;
+
+:root {
+  // Create KIP M3 token variables
+  --mat-sys-background: #{dark.$background};
+
+  --kip-nightModeBrightness: 1;
+  --kip-widget-card-background-color: #{dark.$kip-widget-card-background-color};
+  --kip-widget-card-border-color: #{dark.$kip-widget-card-border-color};
+  --kip-widget-card-border-style: solid;
+  --kip-widget-card-border-width: 2px;
+
+  --kip-blue-color: #{dark.$blue};
+  --kip-blue-dim-color: #{dark.$blueDim};
+  --kip-blue-dimmer-color: #{dark.$blueDimmer};
+
+  --kip-green-color: #{dark.$green};
+  --kip-green-dim-color: #{dark.$greenDim};
+  --kip-green-dimmer-color: #{dark.$greenDimmer};
+
+  --kip-purple-color: #{dark.$purple};
+  --kip-purple-dim-color: #{dark.$purpleDim};
+  --kip-purple-dimmer-color: #{dark.$purpleDimmer};
+
+  --kip-yellow-color: #{dark.$yellow};
+  --kip-yellow-dim-color: #{dark.$yellowDim};
+  --kip-yellow-dimmer-color: #{dark.$yellowDimmer};
+
+  --kip-pink-color: #{dark.$pink};
+  --kip-pink-dim-color: #{dark.$pinkDim};
+  --kip-pink-dimmer-color: #{dark.$pinkDimmer};
+
+  --kip-orange-color: #{dark.$orange};
+  --kip-orange-dim-color: #{dark.$orangeDim};
+  --kip-orange-dimmer-color: #{dark.$orangeDimmer};
+
+  --kip-contrast-color: #{dark.$contrast};
+  --kip-contrast-dim-color: #{dark.$contrastDim};
+  --kip-contrast-dimmer-color: #{dark.$contrastDimmer};
+
+  --kip-grey-color: #{dark.$grey};
+  --kip-grey-dim-color: #{dark.$greyDim};
+  --kip-grey-dimmer-color: #{dark.$greyDimmer};
+
+  --kip-port-color: #{dark.$port};
+  --kip-starboard-color: #{dark.$starboard};
+  --kip-zone-nominal-color: #{dark.$zone-nominal};
+  --kip-zone-alert-color: #{dark.$zone-alert};
+  --kip-zone-warn-color: #{dark.$zone-warn};
+  --kip-zone-alarm-color: #{dark.$zone-alarm};
+  --kip-zone-emergency-color: #{dark.$zone-emergency};
+}
+
+body.light-theme {
+  --mat-sys-background: #{light.$background};
+  --kip-widget-card-background-color: #{light.$kip-widget-card-background-color};
+  --kip-widget-card-border-color: #{light.$kip-widget-card-border-color};
+
+  --kip-contrast-color: #{light.$contrast};
+  --kip-contrast-dim-color: #{light.$contrastDim};
+  --kip-contrast-dimmer-color: #{light.$contrastDimmer};
+  --kip-grey-color: #{light.$grey};
+  --kip-grey-dim-color: #{light.$greyDim};
+  --kip-grey-dimmer-color: #{light.$greyDimmer};
+  --kip-blue-color: #{light.$blue};
+  --kip-blue-dim-color: #{light.$blueDim};
+  --kip-blue-dimmer-color: #{light.$blueDimmer};
+  --kip-green-color: #{light.$green};
+  --kip-green-dim-color: #{light.$greenDim};
+  --kip-green-dimmer-color: #{light.$greenDimmer};
+  --kip-purple-color: #{light.$purple};
+  --kip-purple-dim-color: #{light.$purpleDim};
+  --kip-purple-dimmer-color: #{light.$purpleDimmer};
+  --kip-yellow-color: #{light.$yellow};
+  --kip-yellow-dim-color: #{light.$yellowDim};
+  --kip-yellow-dimmer-color: #{light.$yellowDimmer};
+  --kip-pink-color: #{light.$pink};
+  --kip-pink-dim-color: #{light.$pinkDim};
+  --kip-pink-dimmer-color: #{light.$pinkDimmer};
+  --kip-orange-color: #{light.$orange};
+  --kip-orange-dim-color: #{light.$orangeDim};
+  --kip-orange-dimmer-color: #{light.$orangeDimmer};
+  --kip-port-color: #{light.$port};
+  --kip-starboard-color: #{light.$starboard};
+  --kip-zone-nominal-color: #{light.$zone-nominal};
+  --kip-zone-alert-color: #{light.$zone-alert};
+  --kip-zone-warn-color: #{light.$zone-warn};
+  --kip-zone-alarm-color: #{light.$zone-alarm};
+  --kip-zone-emergency-color: #{light.$zone-emergency};
+}
+
+body.night-theme {
+  --mat-sys-background: #{night.$background};
+  --kip-widget-card-background-color: #{night.$kip-widget-card-background-color};
+  --kip-widget-card-border-color: #{night.$kip-widget-card-border-color};
+
+  --kip-contrast-color: #{night.$contrast};
+  --kip-contrast-dim-color: #{night.$contrastDim};
+  --kip-contrast-dimmer-color: #{night.$contrastDimmer};
+  --kip-grey-color: #{night.$grey};
+  --kip-grey-dim-color: #{night.$greyDim};
+  --kip-grey-dimmer-color: #{night.$greyDimmer};
+  --kip-blue-color: #{night.$blue};
+  --kip-blue-dim-color: #{night.$blueDim};
+  --kip-blue-dimmer-color: #{night.$blueDimmer};
+  --kip-green-color: #{night.$green};
+  --kip-green-dim-color: #{night.$greenDim};
+  --kip-green-dimmer-color: #{night.$greenDimmer};
+  --kip-purple-color: #{night.$purple};
+  --kip-purple-dim-color: #{night.$purpleDim};
+  --kip-purple-dimmer-color: #{night.$purpleDimmer};
+  --kip-yellow-color: #{night.$yellow};
+  --kip-yellow-dim-color: #{night.$yellowDim};
+  --kip-yellow-dimmer-color: #{night.$yellowDimmer};
+  --kip-pink-color: #{night.$pink};
+  --kip-pink-dim-color: #{night.$pinkDim};
+  --kip-pink-dimmer-color: #{night.$pinkDimmer};
+  --kip-orange-color: #{night.$orange};
+  --kip-orange-dim-color: #{night.$orangeDim};
+  --kip-orange-dimmer-color: #{night.$orangeDimmer};
+  --kip-port-color: #{night.$port};
+  --kip-starboard-color: #{night.$starboard};
+  --kip-zone-nominal-color: #{night.$zone-nominal};
+  --kip-zone-alert-color: #{night.$zone-alert};
+  --kip-zone-warn-color: #{night.$zone-warn};
+  --kip-zone-alarm-color: #{night.$zone-alarm};
+  --kip-zone-emergency-color: #{night.$zone-emergency};
+}
+
+html {
+  @include mat.theme((
+    color: (
+      primary: dark.$primary-palette,
+      tertiary: dark.$tertiary-palette,
+      theme-type: dark,
+    ),
+    typography: Roboto,
+    density: 0
+  ));
+}
+
+.light-theme {
+  @include mat.theme((
+    color: (
+      primary: mat.$blue-palette,
+      tertiary: mat.$yellow-palette,
+      theme-type: light,
+    ),
+    typography: Roboto,
+    density: 0
+  ));
+}
+
+.night-theme {
+  @include mat.theme((
+    color: (
+      primary: night.$primary-palette,
+      tertiary: night.$tertiary-palette,
+      theme-type: dark,
+    ),
+    typography: Roboto,
+    density: 0
+  ));
+
+  @include mat.button-overrides((
+    filled-container-color: var(--kip-contrast-dim-color),
+    outlined-outline-color: var(--kip-contrast-color),
+  ));
+
+  @include mat.icon-overrides((
+    color: var(--kip-contrast-color),
+  ));
+
+  @include mat.theme-overrides((
+    on-background: #831d1d,
+    on-surface: #831d1d,
+    on-surface-variant: #831d1d,
+    inverse-surface: #831d1d,
+    primary: #831d1d,
+    outline: #831d1d,
+    tertiary-fixed: var(--kip-contrast-color),
+    tertiary-fixed-dim: var(--kip-contrast-color),
+    ));
+}
+
+// Set base app style
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior-y: none; /* block vertical "overscroll" gestures */
+  user-select: none; /* prevent text selection */
+  -webkit-user-select: none; /* Safari/iOS */
+  -ms-user-select: none;     /* old Edge */
+  overflow-x: hidden;
+}
+
+/* Allow selection inside input/textarea and editable areas */
+input, textarea, [contenteditable="true"] {
+  user-select: text;
+  -webkit-user-select: text;
+  margin: 0;
+  overscroll-behavior-y: none;
+}
+
+/* Make an internal scroller instead of window */
+.app-shell {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  margin: 0;
+  touch-action: none;
+}
+
+#app-filter-wrapper {
+  filter: brightness(var(--kip-nightModeBrightness)) var(--kip-nightModeFilters);
+  backdrop-filter: brightness(var(--kip-nightModeBrightness));
+  transition: filter 0.3s ease;
+  position: relative; /* ensure z-index takes effect on this stacking context */
+  z-index: 1300;      /* sits above overlay (1100) so sidenav will cover the FAB */
+}
+
+.dialogBackdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ng-invalid:not(form) {
+  border-left: 5px solid var(--kip-zone-alarm-color);
+}
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid var(--kip-green-color);
+}
+
+/* Make gridstack resize handles larger */
+.grid-stack .ui-resizable-se,
+.grid-stack .ui-resizable-sw,
+.grid-stack .ui-resizable-ne,
+.grid-stack .ui-resizable-nw {
+  width: 32px;
+  height: 32px;
+}
+
+.grid-stack .ui-resizable-e,
+.grid-stack .ui-resizable-w {
+  width: 32px;
+}
+
+.grid-stack .ui-resizable-n,
+.grid-stack .ui-resizable-s {
+  height: 32px;
+}
+
+/*************************************************************************
+*  Loading Spinner styles. Used during app bootstrap process (while
+*  executing app-initNetwork.service but before Angular has fully loaded)
+*************************************************************************/
+.loader-container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--mat-sys-background);
+  display: flex; // Use flexbox for centering
+  align-items: center; // Center vertically
+  justify-content: center; // Center horizontally
+}
+
+#loader {
+  height: 175px;
+  width: 175px;
+  position: relative; // Ensure proper alignment with flexbox
+}
+
+#loader .dot {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 87.5px;
+}
+
+#loader .dot::before {
+  border-radius: 100%;
+  content: "";
+  height: 87.5px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(0);
+  width: 87.5px;
+}
+
+#loader .dot:nth-child(7n+1) {
+  transform: rotate(45deg);
+}
+
+#loader .dot:nth-child(7n+1)::before {
+  animation: 0.8s linear 0.1s normal none infinite running load;
+  background: #e5ab13 none repeat scroll 0 0;
+}
+
+.notification-overlay-panel {
+  position: fixed;              /* ensure it lives in the viewport, not in ancestor stacking contexts */
+  bottom: 20px;
+  left: 20px;
+  z-index: 1100 !important;
+  pointer-events: auto;
+}
+
+/* More specific rule to avoid being overridden by library rules */
+.cdk-overlay-container .cdk-overlay-pane.notification-overlay-panel {
+  z-index: 1100 !important;
+}
+
+#loader .dot:nth-child(7n+2) {
+  transform: rotate(90deg);
+}
+
+#loader .dot:nth-child(7n+2)::before {
+  animation: 0.8s linear 0.2s normal none infinite running load;
+  background: #f0ca31 none repeat scroll 0 0;
+}
+
+#loader .dot:nth-child(7n+3) {
+  transform: rotate(135deg);
+}
+
+#loader .dot:nth-child(7n+3)::before {
+  animation: 0.8s linear 0.3s normal none infinite running load;
+  background: #92c7e9 none repeat scroll 0 0;
+}
+
+#loader .dot:nth-child(7n+4) {
+  transform: rotate(180deg);
+}
+
+#loader .dot:nth-child(7n+4)::before {
+  animation: 0.8s linear 0.4s normal none infinite running load;
+  background: #63afdf none repeat scroll 0 0;
+}
+
+#loader .dot:nth-child(7n+5) {
+  transform: rotate(225deg);
+}
+
+#loader .dot:nth-child(7n+5)::before {
+  animation: 0.8s linear 0.5s normal none infinite running load;
+  background: #3586ca none repeat scroll 0 0;
+}
+
+#loader .dot:nth-child(7n+6) {
+  transform: rotate(270deg);
+}
+
+#loader .dot:nth-child(7n+6)::before {
+  animation: 0.8s linear 0.6s normal none infinite running load;
+  background: #d52626 none repeat scroll 0 0;
+}
+
+#loader .dot:nth-child(7n+7) {
+  transform: rotate(315deg);
+}
+
+#loader .dot:nth-child(7n+7)::before {
+  animation: 0.8s linear 0.7s normal none infinite running load;
+  background: #e26767 none repeat scroll 0 0;
+}
+
+#loader .dot:nth-child(7n+8) {
+  transform: rotate(360deg);
+}
+
+#loader .dot:nth-child(7n+8)::before {
+  animation: 0.8s linear 0.8s normal none infinite running load;
+  background: #f8e598 none repeat scroll 0 0;
+}
+
+#loader .loading {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  bottom: -40px;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 180px;
+}
+
+@keyframes load {
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes load {
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}

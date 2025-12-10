@@ -1,0 +1,67 @@
+<div [formGroup]="ctrlFormGroup()" class="ctrl-grid rounded-card rounded-card-color">
+  <div class="controls flex-container">
+    <div class="flex-label">
+      <mat-form-field class="full-width">
+        <mat-label>Label</mat-label>
+        <input matInput
+          type="string"
+          placeholder="Enter a display label..."
+          formControlName="ctrlLabel">
+      </mat-form-field>
+    </div>
+    <div class="flex-settings">
+      <mat-form-field class="settings">
+        <mat-label>Type</mat-label>
+        <mat-select
+          placeholder="Select Type..."
+          formControlName="type"
+          name="type"
+          required>
+          <mat-option value=1>Toggle</mat-option>
+          <mat-option value=2>Push</mat-option>
+          <mat-option value=3>Indicator</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="flex-settings">
+      <mat-form-field class="settings">
+        <mat-label>Color</mat-label>
+        <mat-select
+          placeholder="Select Color..."
+          formControlName="color"
+          name="color"
+          required>
+          @for(color of colors; track $index) {
+            <mat-option value='{{color.value}}'>{{color.label}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="flex-full-width">
+      <mat-checkbox
+        formControlName="isNumeric">
+          Use numeric path
+        </mat-checkbox>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="flex-actions">
+      <div class="btn-grid">
+        @if (controlIndex() !== 0) {
+          <button mat-icon-button class="up" type="button" (click)="moveCtrlUp()" aria-label="Move control up in the list">
+            <mat-icon>arrow_drop_up</mat-icon>
+          </button>
+        }
+        @if (controlIndex() !== arrayLength() - 1) {
+          <button mat-icon-button class="down" type="button" (click)="moveCtrlDown()" aria-label="Move control down in the list">
+            <mat-icon>arrow_drop_down</mat-icon>
+          </button>
+        }
+        <button mat-icon-button class="delete" type="button" (click)="deleteControl()" aria-label="Delete control">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+

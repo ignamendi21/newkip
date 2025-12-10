@@ -1,0 +1,31 @@
+<div class="widget-options-grid">
+  <mat-form-field class="options-grid-span2">
+    <mat-label>Date & Time Format</mat-label>
+    <input matInput
+      placeholder="dd/MM/yyyy HH:mm:ss"
+      name="dateFormat"
+      [formControl]="dateFormat()"
+      required>
+  </mat-form-field>
+  <mat-form-field class="options-grid-span2">
+    <mat-label>Adjust Value to Time Zone</mat-label>
+    <input type="text" matInput
+      placeholder="Type to use autocomplete"
+      name="dateTimezone"
+      [formControl]="dateTimezone()"
+      required
+      [matAutocomplete]="timeZoneAutoComplete">
+    @if (dateTimezone().value) {
+      <button mat-icon-button matSuffix aria-label="Clear" (click)="dateTimezone().setValue('')">
+        <span class="fa-solid fa-close"></span>
+      </button>
+    }
+    <mat-autocomplete #timeZoneAutoComplete="matAutocomplete">
+      @for (timeZone of filteredTZ | async; track timeZone) {
+        <mat-option [value]="timeZone.label">
+          {{timeZone.offset}} - {{timeZone.label}}
+        </mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</div>

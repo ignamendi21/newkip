@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <gauge-steel
+    [widgetUUID]="id()"
+    [subType]="runtime.options()?.gauge?.subType"
+    [barGauge]="runtime.options()?.gauge?.digitalMeter"
+    [radialSize]="runtime.options()?.gauge?.radialSize"
+    [backgroundColor]="runtime.options()?.gauge?.backgroundColor"
+    [frameColor]="runtime.options()?.gauge?.faceColor"
+    [minValue]="runtime.options()?.displayScale?.lower"
+    [maxValue]="runtime.options()?.displayScale?.upper"
+    [decimals]="runtime.options()?.numDecimal"
+    [zones]="zones()"
+    [title]="displayName()"
+    [units]="runtime.options()?.paths?.['gaugePath']?.convertUnitTo"
+    [value]="dataValue()"
+    [themeColors]="theme()"
+  ></gauge-steel>
+</div>

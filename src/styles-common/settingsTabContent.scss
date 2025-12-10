@@ -1,0 +1,113 @@
+
+.rounded-card-color {
+  background-color: var(--kip-contrast-dimmer-color);
+}
+
+.rounded-card {
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.formActionFooter {
+  width: 100%;
+  text-align: end;
+  margin-top: 10px;
+}
+
+.formActionButton {
+  margin: 0px 3px 10px 10px;
+}
+
+.formActionDivider {
+  padding-bottom: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 10px;
+}
+
+.flex-item-rounded-card {
+  flex: 1 1 29%;
+  padding: 10px 20px 10px 20px;
+  border-radius: 15px;
+}
+
+.flex-checkbox-30 {
+  flex-grow: 1;
+  flex-basis: 30%;
+  padding-bottom: 23px;
+}
+
+.flex-field-30 {
+  flex-grow: 1;
+  flex-basis: 30%;
+}
+
+.flex-field-50 {
+  flex-grow: 1;
+  flex-basis: 48%;
+}
+
+.flex-field-65 {
+  flex-grow: 1;
+  flex-basis: 65%;
+}
+
+.flex-field-100 {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.flex-field-to-100 {
+  flex-grow: 1;
+  flex-basis: 60%;
+}
+
+.flex-field-fixed {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.filter-path {
+  width: 125px;
+}
+
+.mat-mdc-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.widget-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.options-grid-span2 {
+  grid-column: 1 / span 2;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.radio-button {
+  margin-left: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.page-content-wrapper {
+  padding: 0px 24px 14px 24px;
+}

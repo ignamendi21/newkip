@@ -1,0 +1,96 @@
+:host {
+  display: block;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  cursor: pointer;
+  padding: 0px 0px 0px 0px;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 15px;
+  border: solid 1px var(--mat-sys-outline);
+  cursor: pointer;
+}
+
+.item-container:hover {
+  background-color: var(--mat-sys-inverse-on-surface);
+}
+
+.item-container:focus-visible {
+  background-color: var(--mat-sys-surface-bright);
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+.item-icon {
+  width: 48px;
+}
+
+.item-label {
+  width: calc(100% - 48px);
+  text-align: left;
+  padding-left: 15px;
+}
+
+.title {
+  font-size: var(--mat-sys-label-medium-line-height);
+}
+
+.description {
+  color: var(--mat-sys-outline);
+}
+
+.dependency {
+  color: var(--mat-sys-outline);
+  text-align: start;
+  font-style: italic;
+  font-size: var(--mat-sys-label-large-size);
+}
+
+.dependency-error {
+  color: var(--kip-port-color);
+  font-weight: bold;
+}
+
+.dependency-required-ok {
+  color: var(--kip-starboard-color);
+  font-weight: bold;
+}
+.dependency-required-error {
+  color: var(--kip-port-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.dependency-optional-ok {
+  color: var(--kip-starboard-color);
+}
+.dependency-optional-error {
+  color: var(--kip-port-color);
+}
+.dependency-optional-missing-met {
+  color: var(--mat-sys-outline);
+  text-decoration: line-through;
+}
+.dependency-optional-present-met {
+  color: var(--mat-sys-outline);
+}
+.plugin-type-label {
+  font-size: 0.8em;
+  margin-left: 2px;
+  opacity: 0.7;
+}
+
+.dependency-ok {
+  color: var(--kip-starboard-color);
+}
+
+.no-text-select {
+  -webkit-user-select: none;
+  user-select: none;
+}

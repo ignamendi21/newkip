@@ -1,0 +1,546 @@
+<svg viewBox="0 0 1200 1200">
+  <defs
+     id="defs1">
+    <linearGradient id="linearGradient18">
+      <stop
+         class="boat"
+         style="stop-opacity:0.71372495;"
+         offset="0" />
+      <stop
+         class="boat"
+         style="stop-opacity:0;"
+         offset="1" />
+    </linearGradient>
+    <linearGradient id="linearGradient16">
+      <stop
+         class="boat"
+         style="stop-opacity:0.71372495;"
+         offset="0"/>
+      <stop
+         class="boat"
+         style="stop-opacity:0;"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient13">
+      <stop
+        class="drift-arrow"
+        style="stop-opacity:1;"
+        offset="0.41176471" />
+      <stop
+        class="drift-arrow"
+        style="stop-opacity:0;"
+        offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="swatch4">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16">
+      <ellipse
+         style="display:inline;fill:#9a9300;fill-opacity:1;stroke:none;stroke-width:55;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse16"
+         cx="311.24539"
+         cy="-1516.3778"
+         rx="194.27342"
+         ry="181.83022" />
+    </clipPath>
+    <linearGradient id="linearGradient14"
+       xlink:href="#linearGradient13"
+       x1="453.48047"
+       y1="583.62891"
+       x2="638.11328"
+       y2="583.62891"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00723393,1.2388183,-1.0538241,0.00615367,1211.2051,-79.73465)" />
+    <linearGradient id="linearGradient17"
+       xlink:href="#linearGradient16"
+       x1="-502.04896"
+       y1="439.35551"
+       x2="-316"
+       y2="439.35551"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,49.000266)" />
+    <linearGradient id="linearGradient19"
+       xlink:href="#linearGradient18"
+       x1="495.83999"
+       y1="439.35551"
+       x2="681.88895"
+       y2="439.35551"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,49.000266)" />
+  </defs>
+  <g id="layerBackground"
+     style="display:inline"
+     transform="translate(100,100)">
+    <g id="boat"
+       style="display:inline">
+      <path id="portSide"
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient19);stroke-width:5.821;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:none"
+         d="M 498.75049,208.89453 A 267.09439,554.67401 0 0 1 678.45974,767.81661" />
+      <path id="starboardSide"
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient17);stroke-width:5.821;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:none"
+         d="m -499.13846,208.89453 a 267.09439,554.67401 0 0 1 179.70925,558.92208"
+         transform="scale(-1,1)" />
+    </g>
+  </g>
+  <g id="layerCompass">
+    <g id="fixedDial">
+      <circle id="dialBackground"
+        class="fixed-dial-background"
+        style="display:inline;stroke-width:46"
+        cx="600" cy="620" r="516" />
+    </g>
+    <g #rotatingDial>
+      <g id="barsAndText"
+        class="contrast-stroke"
+        style="display:inline"
+        transform="scale(1.1) translate(45,64)">
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 416.35095,19.837399 2.78142,15.77426"
+          id="path199" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 334.23173,41.658798 5.47834,15.051615"
+          id="path200" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 260.27336,81.806174 12.55151,21.739856"
+          id="path37" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 187.44581,126.00035 10.29591,12.2702"
+          id="path197" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 127.23918,185.95785 12.27019,10.29591"
+          id="path198" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 83.252815,257.66724 21.739865,12.55151"
+          id="path166" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 42.289518,332.39273 15.05162,5.47835"
+          id="path195" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 20.127799,414.42077 15.774251,2.78142"
+          id="path196" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 17.879075,498.47765 H 42.982096"
+          id="path167" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 19.776759,583.71187 15.77426,-2.78142"
+          id="path193" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 41.598167,665.8311 15.051615,-5.47834"
+          id="path194" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 81.668963,739.71246 103.40883,727.16095"
+          id="path168" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 125.93981,812.61701 12.2702,-10.29591"
+          id="path191" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 185.89732,872.82365 10.29591,-12.27019"
+          id="path192" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 257.53004,916.73298 12.55151,-21.73985"
+          id="path169" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 332.33219,957.7732 5.47835,-15.05162"
+          id="path189" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 414.36024,979.93493 2.78142,-15.77425"
+          id="path190" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 498.34046,982.10672 V 957.0037"
+          id="path170" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 583.65133,980.28596 580.86991,964.5117"
+          id="path187" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 665.77057,958.46456 -5.47834,-15.05161"
+          id="path188" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 739.57526,918.31683 727.02375,896.57698"
+          id="path171" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 812.55647,874.12301 802.26056,861.85282"
+          id="path185" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 872.76312,814.16551 860.49293,803.8696"
+          id="path186" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 916.59579,742.45577 894.85593,729.90426"
+          id="path172" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 957.71266,667.73063 -15.05161,-5.47834"
+          id="path183" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 979.8744,585.70259 -15.77425,-2.78142"
+          id="path184" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 981.96954,501.64535 -25.10304,10e-6"
+          id="path173" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 980.22542,416.41149 -15.77425,2.78143"
+          id="path181" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 958.40403,334.29226 -15.05161,5.47834"
+          id="path182" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 918.17964,260.41055 -21.73986,12.55151"
+          id="path174" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 874.06247,187.50636 -12.27018,10.29591"
+          id="path180" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 817.34594,130.05494 -10.40259,12.17987"
+          id="path179" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 742.31857,83.390025 729.76706,105.12988"
+          id="path175" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 667.6701,42.350172 -5.47834,15.051615"
+          id="path178" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:4.18042;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="m 585.64206,20.188432 -2.78142,15.77425"
+          id="path176" />
+        <path
+          style="fill:none;fill-opacity:0;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+          d="M 501.50816,18.016286 V 43.119307"
+          id="path177" />
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="181.91386"
+          y="284.25186"
+          id="text3"
+          transform="rotate(-30)"><tspan
+            id="tspan3"
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="181.91386"
+            y="284.25186">330</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="-183.53558"
+          y="283.74811"
+          id="text14"
+          transform="rotate(-60)"><tspan
+            id="tspan14"
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="-183.53558"
+            y="283.74811">300</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="-499.70761"
+          y="100.95312"
+          id="text15"
+          transform="rotate(-90)"><tspan
+            id="tspan15"
+            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="-499.70761"
+            y="100.95312">W</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="-681.66119"
+          y="-216.36243"
+          id="text16"
+          transform="rotate(-120)"><tspan
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="-681.66119"
+            y="-216.36243"
+            id="tspan25">240</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="-681.06616"
+          y="-581.71271"
+          id="text17"
+          transform="rotate(-150)"><tspan
+            id="tspan17"
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="-681.06616"
+            y="-581.71271">210</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="-498.3313"
+          y="-897.40875"
+          id="text18"
+          transform="scale(-1)"><tspan
+            id="tspan18"
+            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="-498.3313"
+            y="-897.40875">S</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="-184.41313"
+          y="-1080.8452"
+          id="text19"
+          transform="rotate(150)"><tspan
+            id="tspan19"
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="-184.41313"
+            y="-1080.8452">150</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="181.57225"
+          y="-1080.8853"
+          id="text20"
+          transform="rotate(120)"><tspan
+            id="tspan20"
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="181.57225"
+            y="-1080.8853">120</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="501.42661"
+          y="-896.93701"
+          id="text21"
+          transform="rotate(90)"><tspan
+            id="tspan21"
+            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="501.42661"
+            y="-896.93701">E</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="682.35815"
+          y="-579.63336"
+          id="text22"
+          transform="rotate(60)"><tspan
+            id="tspan22"
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="682.35815"
+            y="-579.63336">60</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="681.81525"
+          y="-214.27321"
+          id="text23"
+          transform="rotate(30)"><tspan
+            id="tspan23"
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.0972px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="681.81525"
+            y="-214.27321">30</tspan></text>
+        <text
+          xml:space="preserve"
+          class="contrast-text"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke:none;stroke-width:0.47625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0"
+          x="500.15503"
+          y="101.96342"
+          id="text24"><tspan
+            id="tspan24"
+            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.47625"
+            x="500.15503"
+            y="101.96342">N</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g id="LayerWindShift">
+    <path id="portSectorShift"
+      [style.display]="portWindSectorPath() != 'none' ? 'inline' : 'none'"
+      [attr.d]="portWindSectorPath()"
+      class="wind-sector-port"
+      style="fill-opacity:0.4;stroke:none" />
+    <path id="StbdSectorShift"
+      [style.display]="stbdWindSectorPath() != 'none' ? 'inline' : 'none'"
+      [attr.d]="stbdWindSectorPath()"
+      class="wind-sector-stbd"
+      style="fill-opacity:0.4;stroke:none" />
+  </g>
+  <g id="LayerLayline">
+    <path id="PortLayline"
+       [style.display]="trueWindAngle() != null ? 'inline' : 'none'"
+       [attr.d]="laylinePortPath()"
+       class="portLayline" />
+    <path id="StbdLayline"
+       [style.display]="trueWindAngle() != null ? 'inline' : 'none'"
+       [attr.d]="laylineStbdPath()"
+       class="stbdLayline" />
+  </g>
+  <g id="layerCounter">
+    <g id="tackCounter">
+      <text
+        xml:space="preserve"
+        class="tack-label"
+        x="1062"
+        y="80">Tack/Gybe</text>
+      <rect
+        class="tack-box"
+        x="936"
+        y="95"
+        width="252"
+        height="100"
+        rx="20" />
+      <text
+        xml:space="preserve"
+        class="tack-value"
+        x="1072"
+        y="175"
+        id="text42">{{ tackTrue() }}<tspan style="font-weight:normal;">°<tspan style="font-weight:normal;font-size:30px;">T</tspan></tspan></text>
+    </g>
+    <g id="windVmgCounter">
+      <text
+        xml:space="preserve"
+        class="tack-label"
+        x="600"
+        y="780">Wind VMG</text>
+      <text
+        xml:space="preserve"
+        class="wind-vmg-value"
+        [style.fill]="targetVMGOffsetRatioColor()"
+        x="610"
+        y="850">{{ targetVMG() }}<tspan style="font-weight:normal;font-size:30px;"> kts</tspan></text>
+      <text
+        xml:space="preserve"
+        class="wind-vmg-offset"
+        [style.fill]="targetVMGOffsetRatioColor()"
+        x="610"
+        y="890">{{ targetVMGOffset() }}<tspan style="font-weight:normal;font-size:30px;"> kts</tspan></text>
+    </g>
+    <g id="waypointCounter">
+      <text
+        xml:space="preserve"
+        class="tack-label"
+        x="1062"
+        y="1030">Waypoint</text>
+      <rect
+        class="waypoint-box"
+        x="936"
+        y="1045"
+        width="252"
+        height="140"
+        rx="20" />
+      <text
+        xml:space="preserve"
+        class="waypoint-value"
+        x="1060"
+        y="1100"><tspan class="tack-label">VMG: </tspan>{{ vmgToWaypoint() }}<tspan style="font-weight:normal;font-size:30px;"> kts</tspan></text>
+      <text
+        xml:space="preserve"
+        class="waypoint-value"
+        x="1060"
+        y="1165"><tspan class="tack-label">HDG: </tspan>{{ waypointAngle() }}<tspan style="font-weight:normal;">°<tspan style="font-weight:normal;font-size:30px;">T</tspan></tspan></text>
+    </g>
+  </g>
+  <g id="layerIndicators" style="display:inline">
+    <g #tackIndicator>
+      <path
+        class="tack-angle"
+        d="m 606.20767,217.99458 a 6.3888631,8.8250643 0 0 1 -6.38888,8.82508 6.3888631,8.8250643 0 0 1 -6.38888,-8.82508 6.3888631,8.8250643 0 0 1 6.38888,-8.82509 6.3888631,8.8250643 0 0 1 6.38888,8.82509 z M 576.25472,75.811298 593.47058,58.265068 c 3.6173,-3.6867571 9.44162,-3.6867571 13.05892,0 l 17.21586,17.546106 c 3.6173,3.686743 3.6173,9.622786 0,13.309544 l -17.21595,17.54623 c -3.61721,3.686757 -9.44153,3.686757 -13.05893,0 L 576.25472,89.120841 c -3.6174,-3.686743 -3.6174,-9.622924 0,-13.309543 z m 17.20533,-16.510116 h 12.77766 V 218.26408 h -12.77766 z" />
+    </g>
+    <g #twaIndicator>
+      <path
+        class="true-wind"
+        [style.fill]="windAnglePerformanceRatioColor()"
+        d="m 451.77021,5.469207 42.08541,-33.202814 a 12.555638,12.555638 0.26446337 0 1 15.64423,0.07221 l 42.20046,33.930296 a 15.557694,15.557694 71.53185 0 1 5.32954,15.957795 L 504.17034,230.15629 a 2.5373267,2.5373267 0.02614114 0 1 -4.91879,-0.002 L 446.37431,21.357036 a 15.416336,15.416336 108.75875 0 1 5.3959,-15.887829 z"
+        style="display:inline;stroke:none;stroke-width:5.8876;stroke-miterlimit:0"
+        transform="matrix(0.60410307,0,0,0.70555435,296.91787,121.152867)" />
+      <text
+         xml:space="preserve"
+         class="card-color"
+         style="font-weight:bold;font-size:60px;font-family:Roboto;text-align:center;text-anchor:middle;display:inline;stroke:none"
+         x="600"
+         y="210"
+         id="text10">T</text>
+    </g>
+    <g #wptIndicator
+      [attr.display]="waypointActive() ? 'inline' : 'none'">
+      <ellipse class="next-waypoint"
+        cx="600" cy="225"
+        rx="23" ry="23" />
+    </g>
+  </g>
+  <g id="layerDirectionSpeed">
+    <line id="directionLine" class="direction-line" x1="600" y1="620" x2="600" y2="110" />
+    <line id="speedLine" class="speed-line" x1="600" y1="620" x2="600" [attr.y2]="speedLineTipY()" [style.stroke]="speedRatioColor()" />
+    <polygon id="speedTip" class="speed-line" [style.fill]="speedRatioColor()" [style.stroke]="speedRatioColor()"
+      [attr.points]="speedTipPoints()" />
+  </g>
+  <g id="layerDrift" transform="translate(0, 20)"
+     [style.display]="driftEnabled() ? 'inline' : 'none'">
+    <path #setIndicator id="setArrow" class="drift-arrow"
+      style="fill:url(#linearGradient14)"
+      d="m 663.93337,580.60403 -64.4901,-94.9673 -63.37665,95.71396 58.48691,-30.71299 0.77713,133.08346 c 0.0992,16.99331 2.52916,30.65913 5.44822,30.64209 2.91911,-0.0171 5.18926,-13.71032 5.09001,-30.70362 l -0.77782,-133.20444 z" />
+    <text id="text11"
+       xml:space="preserve"
+       class="contrast-text"
+       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:66.6667px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke:none"
+       x="599.78842"
+       y="623.55145"
+       >{{flow()}}</text>
+  </g>
+  <g id="layerHeading">
+    <rect
+      class="heading-box"
+       style="stroke-width:5;stroke-opacity:0.5"
+       id="rect1"
+       width="290"
+       height="117"
+       x="455"
+       y="10"
+       rx="20" />
+    <text
+      class="contrast-text"
+      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:120px;font-family:Roboto;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke: none;stroke-width:5;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="615"
+      y="110">
+      {{headingValue()}}<tspan style="font-weight:normal;">°</tspan>
+    </text>
+  </g>
+</svg>

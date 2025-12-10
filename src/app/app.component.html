@@ -1,0 +1,30 @@
+<mat-sidenav-container kipGestures [mode]="'horizontal'" [bridgeUiEvents]="true" class="sidenav-container" (swipeleft)="onSwipeLeft()" (swiperight)="onSwipeRight()" (backdropClick)="backdropClicked()">
+  <mat-sidenav class="sidenav-notifications" [(opened)]="notificationsSidenavOpened" (keydown)="escapeKeyPressed($event.key)" mode="over" position="start" autoFocus="true" disableClose>
+    <menu-notifications />
+  </mat-sidenav>
+  <mat-sidenav #actionsSidenav class="sidenav-actions" [(opened)]="actionsSidenavOpened" (keydown)="escapeKeyPressed($event.key)" mode="over" position="end" autoFocus="true" disableClose>
+    <menu-actions [actionsSidenav]="actionsSidenav" />
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet class="router-outlet-container" />
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+@if (upgrade.upgrading()) {
+  <div class="config-upgrade-overlay" role="alert" aria-live="polite">
+    <div class="config-upgrade-card">
+      <mat-progress-spinner diameter="46" mode="indeterminate"></mat-progress-spinner>
+      <div class="config-upgrade-text">
+        <h3>Upgrading Configuration…</h3>
+        <p>Please wait a moment while we migrate your dashboards and widgets.</p>
+        @if (upgrade.messages().length) {
+          <ul #upgradeMessages class="config-upgrade-messages">
+            @for (m of upgrade.messages(); track $index) {
+              <li>{{ m }}</li>
+            }
+          </ul>
+        }
+      </div>
+    </div>
+  </div>
+}
