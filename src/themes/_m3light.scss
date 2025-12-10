@@ -16,6 +16,7 @@ $kip-light-color: (
   orange: #c56200, orange-dim: #c56200b6, orange-dimmer: #c5620078,
   contrast: #000000, contrast-dim: #000000b6, contrast-dimmer: #00000029,
   grey: #666666, grey-dim: #666666b6, grey-dimmer: #66666629,
+  black: #000000, black-dim: #000000b6, black-dimmer: #00000029,
   port: #b70000,
   starboard: #008700,
   zone-nominal: #0182fa,
@@ -69,6 +70,10 @@ $contrastDimmer: map.get($kip-light-color, contrast-dimmer);
 $grey: map.get($kip-light-color, grey);
 $greyDim: map.get($kip-light-color, grey-dim);
 $greyDimmer: map.get($kip-light-color, grey-dimmer);
+
+$black: map.get($kip-light-color, black);
+$blackDim: map.get($kip-light-color, black-dim);
+$blackDimmer: map.get($kip-light-color, black-dimmer);
 
 $port: map.get($kip-light-color, port);
 $starboard: map.get($kip-light-color, starboard);

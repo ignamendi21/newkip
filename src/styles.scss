@@ -55,6 +55,10 @@
   --kip-grey-dim-color: #{dark.$greyDim};
   --kip-grey-dimmer-color: #{dark.$greyDimmer};
 
+  --kip-black-color: #{dark.$black};
+  --kip-black-dim-color: #{dark.$blackDim};
+  --kip-black-dimmer-color: #{dark.$blackDimmer};
+
   --kip-port-color: #{dark.$port};
   --kip-starboard-color: #{dark.$starboard};
   --kip-zone-nominal-color: #{dark.$zone-nominal};
@@ -75,6 +79,9 @@ body.light-theme {
   --kip-grey-color: #{light.$grey};
   --kip-grey-dim-color: #{light.$greyDim};
   --kip-grey-dimmer-color: #{light.$greyDimmer};
+  --kip-black-color: #{light.$black};
+  --kip-black-dim-color: #{light.$blackDim};
+  --kip-black-dimmer-color: #{light.$blackDimmer};
   --kip-blue-color: #{light.$blue};
   --kip-blue-dim-color: #{light.$blueDim};
   --kip-blue-dimmer-color: #{light.$blueDimmer};
@@ -113,6 +120,9 @@ body.night-theme {
   --kip-grey-color: #{night.$grey};
   --kip-grey-dim-color: #{night.$greyDim};
   --kip-grey-dimmer-color: #{night.$greyDimmer};
+  --kip-black-color: #{night.$black};
+  --kip-black-dim-color: #{night.$blackDim};
+  --kip-black-dimmer-color: #{night.$blackDimmer};
   --kip-blue-color: #{night.$blue};
   --kip-blue-dim-color: #{night.$blueDim};
   --kip-blue-dimmer-color: #{night.$blueDimmer};

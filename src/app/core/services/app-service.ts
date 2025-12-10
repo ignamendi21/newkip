@@ -50,6 +50,9 @@ export interface ITheme {
   grey: string,
   greyDim: string,
   greyDimmer: string,
+  black: string,
+  blackDim: string,
+  blackDimmer: string,
   port: string,
   starboard: string,
   zoneNominal: string,
@@ -74,7 +77,8 @@ export class AppService {
     {label: "Yellow", value: "yellow"},
     {label: "Pink", value: "pink"},
     {label: "Purple", value: "purple"},
-    {label: "Grey", value: "grey"}
+    {label: "Grey", value: "grey"},
+    {label: "Black", value: "black"}
   ];
   public snackbarAppNotifications = new Subject<AppNotification>(); // for snackbar message
   public readonly cssThemeColorRoles$ = new BehaviorSubject<ITheme|null>(null);
@@ -191,6 +195,9 @@ export class AppService {
       grey: computedStyle.getPropertyValue('--kip-grey-color').trim(),
       greyDim: computedStyle.getPropertyValue('--kip-grey-dim-color').trim(),
       greyDimmer: computedStyle.getPropertyValue('--kip-grey-dimmer-color').trim(),
+      black: computedStyle.getPropertyValue('--kip-black-color').trim(),
+      blackDim: computedStyle.getPropertyValue('--kip-black-dim-color').trim(),
+      blackDimmer: computedStyle.getPropertyValue('--kip-black-dimmer-color').trim(),
       orange: computedStyle.getPropertyValue('--kip-orange-color').trim(),
       orangeDim: computedStyle.getPropertyValue('--kip-orange-dim-color').trim(),
       orangeDimmer: computedStyle.getPropertyValue('--kip-orange-dimmer-color').trim(),

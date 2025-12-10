@@ -29,7 +29,8 @@ export function getColors(color: string, theme: ITheme): { color: string; dim: s
     "orange": { color: theme.orange, dim: theme.orangeDim, dimmer: theme.orangeDimmer },
     "purple": { color: theme.purple, dim: theme.purpleDim, dimmer: theme.purpleDimmer },
     "yellow": { color: theme.yellow, dim: theme.yellowDim, dimmer: theme.yellowDimmer },
-    "grey": { color: theme.grey, dim: theme.greyDim, dimmer: theme.greyDimmer }
+    "grey": { color: theme.grey, dim: theme.greyDim, dimmer: theme.greyDimmer },
+    "black": { color: theme.black, dim: theme.blackDim, dimmer: theme.blackDimmer }
   };
   return themePalette[color];
 }

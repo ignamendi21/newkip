@@ -148,6 +148,7 @@ $kip-night-color: (
   orange: #520000, orange-dim: #520000b6, orange-dimmer: #260000c5,
   contrast: #520000, contrast-dim: #520000b6, contrast-dimmer: #260000c5,
   grey: #520000, grey-dim: #520000b6, grey-dimmer: #260000c5,
+  black: #000000, black-dim: #000000b6, black-dimmer: #00000029,
   port: #800000,
   starboard: #005500,
   zone-nominal: #001d49,
@@ -201,6 +202,10 @@ $contrastDimmer: map.get($kip-night-color, contrast-dimmer);
 $grey: map.get($kip-night-color, grey);
 $greyDim: map.get($kip-night-color, grey-dim);
 $greyDimmer: map.get($kip-night-color, grey-dimmer);
+
+$black: map.get($kip-night-color, black);
+$blackDim: map.get($kip-night-color, black-dim);
+$blackDimmer: map.get($kip-night-color, black-dimmer);
 
 $port: map.get($kip-night-color, port);
 $starboard: map.get($kip-night-color, starboard);
