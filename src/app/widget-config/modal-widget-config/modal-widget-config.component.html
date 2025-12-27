@@ -300,6 +300,42 @@
                   Ignore Zones configuration
                 </mat-checkbox>
               }
+              @if ((widgetConfig?.lowerThan !== undefined) || (widgetConfig?.biggerThan !== undefined)) {
+                <div class="zone-thresholds">
+                  <mat-divider></mat-divider>
+                  <h3>Widget thresholds</h3>
+                  @if (widgetConfig?.lowerThan !== undefined) {
+                    <mat-form-field>
+                      <mat-label>Lower Than</mat-label>
+                      <input matInput type="number" name="lowerThan" formControlName="lowerThan" placeholder="Enter number..." />
+                    </mat-form-field>
+                    <mat-form-field>
+                      <mat-label>Lower Color</mat-label>
+                      <mat-select name="lowerColor" formControlName="lowerColor">
+                        <mat-option value="green">Green</mat-option>
+                        <mat-option value="red">Red</mat-option>
+                        <mat-option value="black">Black</mat-option>
+                        <mat-option value="contrast">Contrast</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  }
+                  @if (widgetConfig?.biggerThan !== undefined) {
+                    <mat-form-field>
+                      <mat-label>Bigger Than</mat-label>
+                      <input matInput type="number" name="biggerThan" formControlName="biggerThan" placeholder="Enter number..." />
+                    </mat-form-field>
+                    <mat-form-field>
+                      <mat-label>Bigger Color</mat-label>
+                      <mat-select name="biggerColor" formControlName="biggerColor">
+                        <mat-option value="red">Red</mat-option>
+                        <mat-option value="green">Green</mat-option>
+                        <mat-option value="black">Black</mat-option>
+                        <mat-option value="contrast">Contrast</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  }
+                </div>
+              }
               @if ((widgetConfig?.gauge?.type === "angle" )) {
                 <div formGroupName="gauge">
                   <mat-checkbox name="sideLabel" formControlName="sideLabel">

@@ -47,7 +47,12 @@ export class WidgetNumericComponent implements OnInit, AfterViewInit, OnDestroy 
     color: 'contrast',
     enableTimeout: false,
     dataTimeout: 5,
-    ignoreZones: false
+    ignoreZones: false,
+    // Widget-level simple thresholds (optional). If set, these take precedence over Signal K zones.
+    lowerThan: null,       // number: when value is < lowerThan, apply lowerColor
+    lowerColor: 'green',   // 'green'|'red'|'black'|'contrast' or palette key
+    biggerThan: null,      // number: when value is > biggerThan, apply biggerColor
+    biggerColor: 'red'
   };
   private readonly runtime = inject(WidgetRuntimeDirective);
   private readonly stream = inject(WidgetStreamsDirective);
@@ -90,22 +95,38 @@ export class WidgetNumericComponent implements OnInit, AfterViewInit, OnDestroy 
       this.maxValue = this.dataValue;
     }
 
-    if (!this.runtime?.options().ignoreZones) {
-      if (this.pathDataState !== newValue.state) {
-        this.pathDataState = newValue.state as States;
-        switch (newValue.state) {
-          case States.Alarm:
-            this.valueStateColor = this.theme().zoneAlarm;
-            break;
-          case States.Warn:
-            this.valueStateColor = this.theme().zoneWarn;
-            break;
-          case States.Alert:
-            this.valueStateColor = this.theme().zoneAlert;
-            break;
-          default:
-            this.valueStateColor = this.valueColor;
-            break;
+    // First, check widget-level numeric thresholds (take precedence over Signal K zones)
+    const cfg = this.runtime?.options();
+    if (cfg) {
+      const val = this.dataValue;
+      let applied = false;
+      if (cfg.lowerThan !== null && cfg.lowerThan !== undefined && val !== null && val < cfg.lowerThan) {
+        this.valueStateColor = this.getNamedColor(cfg.lowerColor, this.theme());
+        applied = true;
+      } else if (cfg.biggerThan !== null && cfg.biggerThan !== undefined && val !== null && val > cfg.biggerThan) {
+        this.valueStateColor = this.getNamedColor(cfg.biggerColor, this.theme());
+        applied = true;
+      }
+      if (!applied) {
+        // fallback to Signal K zones unless explicitly ignored
+        if (!cfg.ignoreZones) {
+          if (this.pathDataState !== newValue.state) {
+            this.pathDataState = newValue.state as States;
+            switch (newValue.state) {
+              case States.Alarm:
+                this.valueStateColor = this.theme().zoneAlarm;
+                break;
+              case States.Warn:
+                this.valueStateColor = this.theme().zoneWarn;
+                break;
+              case States.Alert:
+                this.valueStateColor = this.theme().zoneAlert;
+                break;
+              default:
+                this.valueStateColor = this.valueColor;
+                break;
+            }
+          }
         }
       }
     }
@@ -231,6 +252,23 @@ export class WidgetNumericComponent implements OnInit, AfterViewInit, OnDestroy 
     this.valueStateColor = this.valueColor = getColors(cfg.color, this.theme()).color;
     this.backgroundBitmap = null;
     this.backgroundBitmapText = null;
+  }
+
+  private getNamedColor(name: string, theme: ITheme): string {
+    if (!name) return theme.contrast;
+    switch (name) {
+      case 'green': return theme.green;
+      case 'red': return theme.zoneAlarm || '#E90000';
+      case 'black': return theme.black ?? '#000000';
+      case 'contrast': return theme.contrast;
+      default:
+        // fallback to palette lookup
+        try {
+          return getColors(name, theme).color || theme.contrast;
+        } catch (e) {
+          return theme.contrast;
+        }
+    }
   }
 
   private drawWidget(): void {

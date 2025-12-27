@@ -165,6 +165,14 @@ export interface IWidgetSvcConfig {
   showMin?: boolean;
   /** Used by numeric data Widget: Display maximum registered value since started */
   showMax?: boolean;
+  /** Widget numeric threshold: lower bound value to trigger color override */
+  lowerThan?: number;
+  /** Widget numeric threshold: color name or hex to apply when value < lowerThan */
+  lowerColor?: string;
+  /** Widget numeric threshold: upper bound value to trigger color override */
+  biggerThan?: number;
+  /** Widget numeric threshold: color name or hex to apply when value > biggerThan */
+  biggerColor?: string;
 
   /** Used by Widgets that support zones: Indicates if SK metadata zones should be applied or not */
   ignoreZones?: boolean;
