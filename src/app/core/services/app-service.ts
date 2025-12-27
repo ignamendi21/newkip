@@ -114,6 +114,18 @@ export class AppService {
         document.body.classList.remove('light-theme');
       }
     });
+    // Ensure theme CSS variables are re-read whenever theme changes
+    effect(() => {
+      // this effect will run when this._theme() changes
+      const current = this._theme();
+      // Toggle class already handled by the other effect; now refresh CSS roles
+      // so widgets receive updated color values (contrast, etc.) after theme switch
+      // Delay reading until microtask to ensure class toggles are applied
+      Promise.resolve().then(() => {
+        this.readThemeCssRoleVariables();
+        this._cssThemeColorRoles = this.cssThemeColorRoles$.getValue();
+      });
+    });
 
     effect(() => {
       const mode = this._environmentMode().data.value;
